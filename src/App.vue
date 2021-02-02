@@ -15,7 +15,7 @@ export default defineComponent({
   name: 'App',
   data() {
     return {
-      text : "bienvenu sur l'appli",
+      text : "bienvenue sur l'appli",
       showText: true,
       items: [{id: 13, nom: "hervé"}, {id: 26, nom: "Pascal"}, {id: 32, nom: "Eglantine"}]
     }
