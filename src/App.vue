@@ -1,18 +1,16 @@
 <template>
-  <div id="listDiv">
-    <h1 v-if="showText"> {{text}} </h1>
-    <ul v-else id="list">
-      <li v-for="item in items" v-bind:key="item"> {{item.id}} : {{item.nom}}</li>
-    </ul>
-    <button @click="toogleTextList">changer l'affichage</button>
-  </div>
+  <ArrayFilterer></ArrayFilterer>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import ArrayFilterer from './components/ArrayFilterer.vue';
 
 export default defineComponent({
   name: 'App',
+  components: {
+    ArrayFilterer,
+  },
   data() {
     return {
       text : "bienvenue sur l'appli",
